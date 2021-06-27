@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family-Open+Sans:wght@400&display=swap');
+
+html, body {
+    height: 100%;
+
+}
+
+body {
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background: #040404;
+}
+
+label {
+    position: relative;
+}
+
+label svg {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    color: #393838;
+    transition: color 0.2s;
+}
+
+label:focus-within svg {
+    color: #f5f8ff;
+}
+
+label input {
+    font-family: inherit;
+    font-size: 1.2rem;
+    color: #f5f8ff;
+    background: rgba(245, 248, 255, 0.025);
+    min-width: 12rem;
+    outline: none;
+    padding: 1rem 1.4rem 1rem 3.2rem;
+    border: 0.15rem solid transparent;
+    border-radius: 0.4rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+label:hover input{
+    border-color: rgba(245, 248, 255, 0.02);
+}
+
+label input::placeholder {
+    color: #393838;
+    user-select: none;
+}
+
+label input:focus {
+    border-color: #8a9cfe;
+    box-shadow: 0 0 0 0.4rem rgba(138, 156, 254, 0.15);
+}
